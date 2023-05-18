@@ -49,21 +49,21 @@
 						<picture>
 							<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" type="image/webp">
 							<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" type="image/jpg">
-							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block mw-100 h-100" style="max-width: 1920px;" alt="Photo d'un homme en costume qui marche sur un passage pour pieton">
+							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block slider-img" style="max-width: 1920px;" alt="Photo d'un homme en costume qui marche sur un passage pour pieton">
 						</picture>
 					</div>
 					<div class="carousel-item">
 						<picture>
 							<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" type="image/webp">
 							<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" type="image/jpg">
-							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block mw-100 h-100" style="max-width: 1920px;" alt="Photo d'un public dans un concert">
+							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block slider-img" style="max-width: 1920px;" alt="Photo d'un public dans un concert">
 						</picture>
 					</div>
 					<div class="carousel-item">
 						<picture>
 							<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" type="image/webp">
 							<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" type="image/jpg">
-							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block mw-100 h-100" style="max-width: 1920px;" alt="Photo d'un couple de marié qui s'embrasse sous les applaudissements de la foule">
+							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block slider-img" style="max-width: 1920px;" alt="Photo d'un couple de marié qui s'embrasse sous les applaudissements de la foule">
 						</picture>
 					</div>
 				</div>
@@ -85,18 +85,18 @@
 				<picture>
 					<source srcset="./assets/images/nina.webp" type="image/webp">
 					<source srcset="./assets/images/nina.png" type="image/jpg">
-					<img src="./assets/images/nina.jpg" alt="Photo portrait de Nina Carducci">
+					<img class="about-img" src="./assets/images/nina.jpg" alt="Photo portrait de Nina Carducci">
 				</picture>
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
 				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+				<p id="about-me__description">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
 		</div>
 		<div id="gallery">
-			<h2 class="title">Portfolio</h2>
+			<h2 class="title">Galerie</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<picture class="gallery-item" data-gallery-tag="Concert">
@@ -164,7 +164,7 @@
 						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 					</div>
 					<div class="service__price">
-						<p>350€/demi journée</p>
+						<p class="price">350€/demi journée</p>
 						<p>Matériel, déplacement inclus</p>
 					</div>
 		
@@ -175,7 +175,7 @@
 						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 					</div>
 					<div class="service__price">
-						<p>50€/photo</p>
+						<p class="price">50€/photo</p>
 						<p>2 AR par photo</p>
 					</div>
 				</div>
@@ -185,7 +185,7 @@
 						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 					</div>
 					<div class="service__price">
-						<p>400€ album A4</p>
+						<p class="price">400€ album A4</p>
 						<p>30 pages recto/verso</p>
 					</div>
 				</div>
@@ -221,15 +221,30 @@
 		<div class="picture right">
 			<picture>
 				<source srcset="./assets/images/camera.webp" type="image/webp">
-				<source srcset="./assets/images/camera.png" type="image/jpg">
-				<img src="./assets/images/camera.png" alt="Photo d'un appareil photo">
+				<source srcset="./assets/images/camera.jpg" type="image/jpg">
+				<img class="footer-img" src="./assets/images/camera.png" alt="Photo d'un appareil photo">
 			</picture>
 		</div>
 	</div>
 </div>
-<!-- <script src="./assets/bootstrap/bootstrap.bundle.js"></script> -->
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="./assets/maugallery.js"></script>
 <script src="./assets/scripts.js"></script>
+<script type="application/ld+json">
+	{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci",
+			"telephone": "+33-05-56-67-78-89",
+			"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "68 avenue Alsace-Lorraine, 33200 Bordeaux",
+					"addressLocality": "Bordeaux",
+					"postalCode": "33200",
+					"addressCountry": "France"
+			}
+	}
+</script>
 </body>
 </html>
