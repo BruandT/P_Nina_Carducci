@@ -1,9 +1,10 @@
+
 body {
 	max-width: 1920px;
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 }
 .top-header {
@@ -40,6 +41,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -80,18 +82,15 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-style: italic;
+	font-size: 16px;
 	width: 60%;
 }
-#about-me p {
+#about-me__description {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
 }
 .title{
 	text-align: center;
@@ -101,12 +100,12 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
 }
 .item-column {
 	position: relative;
@@ -119,12 +118,11 @@ body {
 	padding-bottom: 100%;
 
 }
-.gallery-item-img {
+.gallery-item-img, .slider-img, .about-img,.footer-img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -142,20 +140,21 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	font-weight: 300;
+	font-size: calc(1.375rem + 1.5vw);
 
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -194,6 +193,14 @@ body {
 	justify-content: space-between;
 	z-index: 1;
 }
+.service__price p:nth-child(2){
+	margin: 0;
+}
+.price{
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
 
 #contact {
 	margin: auto;
@@ -245,7 +252,8 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #BEB45A;
+	background-color: #000;
+	color: #fff;
 	padding: .5em 1em
 }
 
@@ -297,8 +305,7 @@ input[type="submit"] {
 	}
 	.service__description{
 		margin-bottom: 1em;
-	}
-
+	}	
 	#services .container::before{
 		width: 30%;
 		height: 100%;
@@ -313,6 +320,10 @@ input[type="submit"] {
 	}
 	#contact .picture.right {
 		margin-top: 1em;
+	}
+	.right{
+		width: 100%;
+		height: 378px;
 	}
 	.picture.right::before {
 		width: 100%;
